@@ -1,0 +1,71 @@
+form {
+    margin-left: 26%;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.input-append, .input-prepend {
+    /*display:flex;*/
+     float: left;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    font-size: 0;
+    white-space: nowrap;
+}
+#browseBtn,#uploadMEBtn{
+    border-bottom-left-radius: 0;
+    display: inline-block;
+    margin-left: 5px;
+	margin-right: 5px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+#errMsg{
+	position:relative;
+}
+.errMessage{
+	position:absolute;
+	top :20px;
+}
+
+
+input:disabled {
+    cursor: not-allowed !important;
+}
+#subfile{
+    border-bottom-left-radius: 4px;
+    display: inline-block;
+    float: left;
+    line-height: 18px;
+    width: 250px;
+    height: 30px;
+}
+
+
+/*Message style*/
+td.red{
+    color:red;
+}
+td.green{
+    color:green;
+}
+
+
+
+.submit_file {
+    float: left;
+}
+#migrataSetUp{
+    display: inline-block;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin-left: 100px;
+}
+
+.disable{
+	background-color: #e7e7e7;
+
+}

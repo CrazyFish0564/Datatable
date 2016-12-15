@@ -1,0 +1,930 @@
+/*
+ *  File:         invoice.css
+ *  Description:  CSS descriptions for invoice search demo pages
+ *  Author:       
+ *  Created:      Tue Aug 20 17:18:22 BST 2012
+ *  Language:     CSS
+ *  Project:      invoiceSearch
+ *
+ * ***************************************************************************
+ * DESCRIPTION
+ *
+ * The styles given here are suitable for the demos for invoice search
+
+  /*override div.body*/
+
+.body.themeBackground {
+    position: inherit!important;
+}
+ 
+/*
+*   image zoom in style
+*/
+img {
+    border: none;
+}
+#preview {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #333;
+    padding: 5px;
+    display: none;
+    color: #fff;
+}
+
+ul#icons li {
+    cursor: pointer;
+    float: left;
+    list-style: none outside none;
+    margin: 0px;
+    padding: 4px 10px;
+    position: relative;
+}
+
+ul  li:hover{
+    background: url("../images/ui-bg_glass_55_fbf9ee_1x400.png") repeat-x scroll 50% 50% #DADADA;
+    border: 1px solid #999999;
+    color: #212121;
+    font-weight: normal;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 0px;
+}
+
+.updatedRow{
+    background:#6f7fad;
+}
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+
+.TableHeaderRow{
+  line-height: 1.1em;
+}
+  
+div.dataTables_wrapper tbody a {
+    text-decoration: underline;
+}
+
+div.dataTables_wrapper  table tr.even.row_selected td {
+    /*background-color: #B0BED9;
+    color:#00BFF3;*/
+}
+
+div.dataTables_wrapper table tr.odd.row_selected td {
+    /*background-color: #9FAFD1;
+    color:#00BFF3;*/
+}
+
+a.invoiceLink :link {
+    /*color: #00BFF3;
+    text-decoration: none;*/
+
+}
+a.invoiceLink:visited {
+    color: #822980;
+}
+
+a.invoiceLink:hover{
+    text-decoration: underline;
+}
+a.invoiceLink {
+    color: #007DBA;   
+  
+}
+.ui-widget-header {
+    border: 0px solid #333333;
+}
+h3{
+    line-height: 10px;
+}
+.loading_page {
+    position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 200%;
+        z-index: 2000;
+        background-color: #CCCCCC;
+        filter: alpha(opacity = 50);
+        opacity: .5;
+}
+
+/*#checkPassDuplicateInvoiceDiv a{
+    color: #00BFF3!important;
+}*/
+
+.accordioninvoice{
+        margin: 0;
+    padding: 10px 0;
+    width: auto;
+    }
+
+    
+#search_result{
+    width:100%!important;
+}
+td.right {
+  text-align: right;
+}
+td.center {
+    text-align: center;
+}           
+div.scroller {
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+}
+#radioViewHistory td{
+    color:#00BFF3!important;
+    font-weight: bold;
+
+}
+#displayHistoryInvoiceUID{
+    color:#222222!important;
+    font-weight: bold;
+    background-color: #BDBDBD!important;
+}
+#currentStatus{
+    font-weight: bold;
+}
+#changeStatus{
+    font-weight: bold;
+}
+
+#invoiceHistoryPopupDiv{
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+#historyNiceViewTable{
+    width: 100%;
+    border:0px;
+}
+
+#historyTechnicalView{
+    width: 100%;
+    height:450px; 
+    overflow-y:scroll;
+    border:0px;
+    overflow-x:hidden;
+}
+.dataTables_scrollHeadInner .dataTable{border-bottom: 0;}
+.dataTables_scrollBody .dataTable{border-top: 0;}
+#redirectLoginUrl{
+    font-weight: bold;
+}
+#dialog-confirm-reprocess span,#dialog-confirm-cancel span{
+    float: left; 
+    //margin: 0 7px 20px 0;
+}
+
+.ui-multiselect { padding:2px 0 2px 4px; text-align:left }
+.ui-multiselect span.ui-icon { float:right }
+.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important }
+
+.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
+.ui-multiselect-header ul { font-size:18px; line-height:22px; }
+.ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
+.ui-multiselect-header a { text-decoration:none }
+.ui-multiselect-header a:hover { text-decoration:underline }
+.ui-multiselect-header span.ui-icon { float:left }
+.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
+
+.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; text-align: left }
+.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:auto }
+.ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
+.ui-multiselect-checkboxes label input { position:relative; top:1px }
+.ui-multiselect-checkboxes li { clear:both; font-size:1em; padding-right:3px }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
+
+.selectFilterType .ui-multiselect {   
+    /*background: url("../images/filter.png") no-repeat scroll 0 0 #FCFCFC;*/
+    background: none;
+    border: 0px none #FFF;
+    height: 33px;
+    margin-bottom: 2px;}
+.selectFilterType{ display: inline;width: 24px; }
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }
+
+.hidden { visibility:hidden;}
+
+
+.message { padding:10px; margin:15px 0; display:block; text-align:left }
+.message-title { font-weight:bold; font-size:18px }
+.message-body { margin-top:4px }
+.error, .notice, .success { padding:.8em; margin-bottom:1em; border:2px solid #ddd }
+.error { background:#FBE3E4; color:#8a1f11; border-color:#FBC2C4 }
+.notice { background:#FFF6BF; color:#514721; border-color:#FFD324 }
+.success { background:#E6EFC2; color:#264409; border-color:#C6D880 }
+.error a { color:#8a1f11 }
+.notice a { color:#514721 }
+.success a { color:#264409 }
+
+/*search panel*/
+
+.searchContent {
+    background: none repeat scroll 0 0 #fff;
+    /*border: 1px solid #C9C8C8;*/
+    border-radius: 3px 3px 3px 3px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.searchPanel {
+    /*margin: 8px 20px 5px;*/
+}
+
+.searchPanel > table {
+    width: 100%;
+}
+
+.searchCriteria input[type="text"], textarea{
+    background-color: #FFFFFF;
+    margin: 3px;
+}
+
+/*button style*/
+.controllerButtons {
+   // height: 32px;
+    margin-bottom: 10px;
+  //  margin-right: 40px;
+    text-align: right;
+}
+
+
+.searchButton, .resetFilters, .downloadCsv {
+    border: 1px none;
+    border-radius: 0px 4px 0px 4px;
+    box-shadow: none;
+    color: #FFFFFF;
+    float: right;
+    margin: 0 5px 0px;
+}
+.reprocessInvoice,.cancelInvoice,.cancelBatchInvoice,.flushBatchInvoice
+{
+    float: left;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px;
+    margin: 8px 0 8px 6px;
+}
+
+.flushBatchInvoice {
+    padding: 1px 1px 5px 29px;
+    width: 128px;
+    height: 32px;
+    background-image: url("../images/flushBatchWithIcon.png");
+}
+/*search box*/
+#search_result_filter input[type="text"] {
+   /* background: url("../images/search-dark.png") no-repeat scroll 10px 6px #FCFCFC;
+    border: 0 none;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    color: #222222;
+    font: 12px Arial,Helvetica,Sans-serif;
+    padding: 6px 15px 6px 35px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.7s ease 0s;
+    width: 100px;*/
+}
+
+#search_result_filter input[type="text"]:focus {
+  /*  background: url(../images/search-dark.png) no-repeat 10px 6px #fcfcfc;
+    color: #222222;
+    width: 150px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0
+    rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0
+    rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9)
+    inset;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);*/
+}
+.dataTables_filter {
+    float: none;
+    text-align: right;
+    width: 50%;
+}
+
+.customerFilter {
+    font-weight: bold;
+    width: 20%;
+}
+.customerFilter, .showOrHide {
+    float: right;
+    margin: 7px 0 8px 8px;
+}
+
+
+.filterInput {
+    float: right;
+}
+/*table css*/
+#action {
+  /*  min-width: 100px;*/
+}
+.search_result {
+    margin-bottom: 20px;
+    width: 100%;
+}
+/*change length*/
+#search_result_length select[name="search_result_length"] {
+    background-color: #FFFFFF;
+    border: 1px solid #8C8C8C;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 2px 2px 5px #E2E2E2, 2px 2px 5px #CACBCC inset;
+    color: #4D4D4D;
+    margin: 3px;
+    padding: 0;
+    width: 50px;
+}
+.dataTables_paginate {
+    float: left;
+    text-align: right;
+}
+
+.dataTables_info {
+    /*padding-top: 3px;*/
+}
+.dataTables_info {
+   /* float: right;
+    text-align: right;
+    width: 42%;*/
+}
+.actionStatus {
+    height: 6px;
+    width: 9px;
+    margin: 11px 7px 8px 3px;
+}
+.actionLabel {
+    margin: 5px 3px 5px 1px;
+}
+
+.actionLabel,.actionStatus,.actionIcon {
+    float: left;
+}
+
+/*
+        Action buttons
+    */
+.actionDiv {
+    background: #fcfcfc;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.ui-dialog {
+    background: #fcfcfc;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.downloadInvoice,.viewHistory,.checkDuplicate,.reprocess,.cancel,.copy{
+    float: left;
+    height: 24px;
+    width: 24px;
+    margin: 5px;
+}
+
+/*history table*/
+div.ui-multiselect-menu {
+    width: 220px !important;
+    z-index: 1000;
+}
+button.ui-multiselect {
+    width: 24px !important;
+}
+
+/*
+        admin link
+    */
+.applyAdminDiv {
+    margin-top: 60px;
+}
+
+.applyAdminDiv a {
+    color: black !important;
+    text-decoration: underline !important;
+}
+
+.applyAdminDiv a:hover {
+    color: #467db9 !important;
+    text-decoration: underline !important;
+}
+/* batch button*/
+.flushBatchInvoice, .cancelBatchInvoice {
+    display: none;
+}
+
+/*search panel*/
+
+.searchContent {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 3px 3px 3px 3px;
+    height: auto;
+    margin: 15px auto;
+    width: 97%;
+}
+
+.searchPanel > table {
+    width: 100%;
+}
+
+.searchCriteria input[type="text"], textarea{
+    padding: 3px 10px;
+    outline: none;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+    width: 89%;
+    margin-left: 0px;
+}
+
+/*button style*/
+.controllerButtons{
+    text-align: right;
+    padding: 20px;
+}
+
+
+.controllerButtons a{
+    float: right;
+    color: #fff;
+}
+
+.displayMessage {
+    color: #008000;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-transform: none;
+}
+
+
+#actionDiv_actionList>div{
+    background: #5395DB; /* Old browsers */
+    background: -moz-linear-gradient(top, #5395DB 0%, #518DC8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5395DB), color-stop(100%, #518DC8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #5395DB 0%, #518DC8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #5395DB 0%, #518DC8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #5395DB 0%, #518DC8 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #5395DB 0%, #518DC8 100%); /* W3C */
+    background: -moz-linear-gradient(center top , #5395DB 0%, #518DC8 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #2F60A8;
+    border-radius: 12px;
+    display: block;
+    height: 22px;
+    width: 22px;
+}
+
+.menuTools_Div {
+    background-image: url("../images/menuToolsRepeatBackGroup.png");
+    border: 1px solid #CBCACA;
+    border-radius: 3px 3px 0 0;
+    display: none;
+    height: 48px;
+    margin-top: 10px;
+}
+.reprocessInvoice {
+    padding: 1px 1px 5px 29px;
+    width: 140px;
+    height: 32px;
+    background-image: url("../images/reprocessInvoiceWithIcon.png");
+}
+
+.cancelInvoice {
+    padding: 1px 1px 5px 29px;
+    width: 86px;
+    height: 32px;
+    background-image: url("../images/cancelInvoiceWithIcon.png");
+}
+
+.cancelBatchInvoice {
+    padding: 1px 1px 5px 29px;
+    width: 128px;
+    height: 32px;
+    background-image: url("../images/cancelBatchWithIcon.png");
+}
+
+
+
+.reprocessInvoice,.cancelInvoice,.cancelBatchInvoice,.flushBatchInvoice
+{
+    float: left;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px;
+    margin: 8px 0 8px 6px;
+}
+
+.flushBatchInvoice {
+    padding: 1px 1px 5px 29px;
+    width: 128px;
+    height: 32px;
+    background-image: url("../images/flushBatchWithIcon.png");
+}
+/*search box*/
+#search_result_filter input[type="text"] {
+ 
+}
+.dataTables_filter {
+    float: none;
+    text-align: right;
+    width: 50%;
+}
+
+/*change length*/
+#search_result_length select[name="search_result_length"] {
+    background-color: #FFFFFF;
+    border: 1px solid #8C8C8C;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 2px 2px 5px #E2E2E2, 2px 2px 5px #CACBCC inset;
+    color: #4D4D4D;
+    margin: 3px;
+    padding: 0;
+    width: 50px;
+}
+.dataTables_paginate {
+    float: left;
+    text-align: right;
+}
+
+
+.dataTables_info {
+
+}
+.actionIcon {
+    /*background-image: url("../images/actionIcon.png");*/
+    height: 14px;
+    width: 14px;
+    margin: 5px 7px 8px 12px;
+}
+
+.actionHeaderIcon {
+   /* background-image: url("../images/actionIcon.png");*/
+    /*float: left;*/
+    display:inline-block;
+    height: 14px;
+    /*margin: 0 5px 1px 10px;*/
+    width: 14px;
+}
+#action .actionHeaderIcon{
+    margin: -15px 5px 1px 15px;
+}
+.actionStatus {
+    height: 6px;
+    width: 9px;
+    margin: 11px 7px 8px 3px;
+    cursor: pointer;
+}
+
+.actionNotActive {
+   /* background-image: url("../images/actionActiveIcon.png");*/
+}
+
+.actionNotActive:hover { /*
+        background-image:url("../images/actionNotActiveIcon.png");*/
+
+}
+
+.actionLabel {
+    margin: 5px 3px 5px 1px;
+}
+
+.actionLabel,.actionStatus,.actionIcon {
+    float: left;
+}
+
+/*
+        Action buttons
+    */
+.actionDiv {
+    background: #fcfcfc;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.ui-dialog {
+    background: #fcfcfc;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.downloadInvoice,.viewHistory,.checkDuplicate,.reprocess,.cancel,.upload {
+    float: left;
+    height: 24px;
+    width: 24px;
+    margin: 5px;
+}
+
+.downloadInvoice {
+    /*background-image: url("../images/actions_download_hover.png");*/
+}
+
+.downloadInvoice:hover { /*
+        background-image:url("../images/actions_download.png"); */
+
+}
+
+.viewHistory {
+   /* background-image: url("../images/actions_view_hover.png");*/
+}
+
+.viewHistory:hover {
+    /*background-image:url("../images/actions_view.png");*/
+
+}
+
+.checkDuplicate {
+    /*background-image: url("../images/actions_turn_hover.png");*/
+}
+
+.checkDuplicate:hover {
+    /*background-image:url("../images/actions_turn.png");   */
+
+}
+
+.reprocess {
+    /*background-image: url("../images/actions_repocess_hover.png");*/
+}
+
+.reprocess:hover { /*
+        background-image:url("../images/actions_repocess.png"); */
+
+}
+
+.cancel {
+    /*background-image: url("../images/actions_cancel_hover.png");*/
+}
+
+.cancel:hover { /*
+        background-image:url("../images/actions_cancel.png");*/
+
+}
+
+/*
+        admin link
+    */
+.applyAdminDiv {
+    margin-top: 60px;
+}
+
+.applyAdminDiv a {
+    color: black !important;
+    text-decoration: underline !important;
+}
+
+.applyAdminDiv a:hover {
+    color: #467db9 !important;
+    text-decoration: underline !important;
+}
+/* batch button*/
+.flushBatchInvoice, .cancelBatchInvoice {
+    display: none;
+}
+
+.controllerButtons i{
+    margin-right: 10px;
+}
+
+
+#actionDiv_actionList i{
+
+    display: inline-block;
+    margin: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+#actionDiv_actionList div{
+    text-align: center;
+}
+.yellow{
+    color: yellow;
+}
+
+.Cblue{
+    color: #1D6fb1;
+}
+
+#checkPassDuplicateInvoiceDiv a {
+    text-decoration: none;
+    color: #007DBA;
+}
+
+#checkPassDuplicateInvoiceDiv a:hover {
+    
+    text-decoration: underline;
+}
+
+
+#dialog-confirm-reprocess+div>div button i,#dialog-confirm-reprocess+div>div button span
+,#dialog-confirm-reprocess-two+div>div button i,#dialog-confirm-reprocess-two+div>div button span
+{
+
+   float: left;
+}
+
+
+#dialog-confirm-reprocess+div .ui-button,#dialog-confirm-cancel+div .ui-button
+,#dialog-confirm-reprocess-two+div .ui-button{
+    font-family: HPSimplified_Bd;
+    color: #FFF;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;   
+    font-size: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;    
+    text-transform: capitalize;
+    margin: 0 2px;
+    padding: 0px; 
+    border: none;
+    font-weight:bold;
+}
+
+/*#dialog-confirm-reprocess+div .sureButton,#dialog-confirm-cancel+div .sureButton{  */
+    /*background: none repeat scroll 0 0 #0096d6;*/
+/*}*/
+
+/*#dialog-confirm-reprocess+div .sureButton:hover,#dialog-confirm-cancel+div .sureButton:hover{  */
+    /*background:  #006699;*/
+/*}*/
+
+#dialog-confirm-reprocess+div .cancelButton,#dialog-confirm-cancel+div .cancelButton{  
+    background: none repeat scroll 0 0 #0096D6;   
+}
+
+#dialog-confirm-reprocess+div .cancelButton:hover,#dialog-confirm-cancel+div .cancelButton:hover{  
+    background: #006699;   
+}
+
+#dialog-confirm-cancel+div>div button i,#dialog-confirm-cancel+div>div button span{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+
+.dataTables_info {
+
+}
+
+.dataTables_filter {
+    float: right;
+    text-align: right;
+    width: 20%;
+}
+
+
+.searchCriteria input[type="text"]:focus, .searchCriteria input[type="password"]:focus, .searchCriteria textarea:focus {
+  
+}
+
+
+
+.selectFilterType button{
+
+    box-shadow: none;
+
+
+
+}
+
+#viewHistory_result .TableHeaderRow th {
+
+}
+
+
+.ui-multiselect-menu .ui-state-hover{
+    background: #edf5f7; /* Old browsers */
+    border: none;
+
+
+}
+
+.ui-multiselect-menu .ui-widget-content{
+    border: none;
+}
+
+.ui-datepicker-month,.ui-datepicker-year{
+    padding: 0px;
+}
+
+.searchPanel .open .selecter-options{
+
+     display: block;
+     margin: 0px auto !important;
+}
+
+
+#form{
+    /*position: relative;*/
+    /*margin-top: 15px;*/
+}
+
+.SearchClose{
+    position: absolute;
+    background: url("../images/s-21px-hpe.png") no-repeat scroll left -2085px transparent;
+    display: block;
+    float: right;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 18px;
+
+}
+
+.historycolor{
+    color: #0096D6;
+}
+
+.spingif{ 
+
+    height: 12px;
+    width: 12px;
+}
+.searchPanel .selecter {
+    width: 89%;
+    max-width: 89%;
+}
+.searchPanel td {
+    width: 16.6%;
+}
+#alertMessagePop{position: absolute; width: 100%;overflow: hidden; z-index: 2000; }
+.alert.success,.alert.error, .alert.notice{border:none; padding:10px; margin-bottom:0;font-size: 14px; line-height: 18px;}
+
+.dataTables_reprocesscancel {
+    background: none repeat scroll 0 0 #D7410B;
+    color: #FFFFFF;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: inline-block;
+    font-family: HPSimplified_Bd,Arial;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 1px;
+    overflow: hidden;
+    padding: 0 9px;
+    width: auto;
+     text-transform: capitalize;
+}
+a.dataTables_reprocesscancel:hover{
+    text-decoration:none;
+    background: none repeat scroll 0 0 #c1401a;
+}
+#showAllMeg{
+    margin-left:10px;
+    }
+a#showAllMeg:hover{
+    text-decoration:underline;
+    }
+    
+.filterRow input {
+    width: 80%;
+}
+#search_result .selecter-options.multi-options {
+    width: 200px;
+}
+.searchCriteria .selecter-selected input[type="text"]{padding: 3px 0px;height: 30px; margin: 0;}
+#dialog-copy-confirm+div>div button i,#dialog-copy-confirm+div>div button span{
+    float: left;
+}
+
+
+
+.dataTable td{
+    font-size: 12px;
+}
+
+.DataTables_sort_wrapper{
+    font-size: 12px;
+}
+#action{width:15px!important;cursor:default!important;}
+div.DataTables_sort_wrapper {padding: 10px 5px;}
+.actionIcon i{cursor:pointer;}
+
+#uploadButtons{
+    left: 390px;
+    position: absolute;
+    top: 182px;    
+}
+.disable{
+	background-color: #e7e7e7;
+	color: black;
+}

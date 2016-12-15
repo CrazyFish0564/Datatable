@@ -1,0 +1,600 @@
+/*
+	
+	 *  File:         tpe_common.css
+	 *  Description:  CSS descriptions for common style in tpe portlet applications
+	 *  Author:       
+	 *  Created:      Tue Feb 22 2013
+	 *  Language:     CSS
+	 *  Project:      TPE
+	 *
+	 * ***************************************************************************
+	 * DESCRIPTION
+	 *
+	 * The styles given here are suitable for all tpe portlet applications
+	 * version: 1.0.0
+	*/
+body * {
+	/*line-height: 1.22em;*/
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-size: 13px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+
+.ui-widget {
+	font-size: 1em;
+}
+
+/*
+		css style for content
+	*/
+div.everything {
+	height: 100%;
+	position: relative;
+	width: 99%;
+	margin: auto;
+}
+
+/*
+		css style for header
+	*/
+.loading_page {
+    background-color: #CCCCCC;
+    height: 200%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+}
+.everything .siteTitle {
+	background-color: white;
+}
+
+#tabbedNavEnhanced {
+    background-image: -moz-linear-gradient(center top , #73AAD7, #1F76BF);
+    border: 1px solid #1C72A7;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 #292929;
+    height: 40px;
+    width: 1024;
+    margin: 10px 0 0;
+    overflow: hidden;
+/*    margin-left: 12px;*/
+}
+/*
+#tabbedNavEnhanced {
+	border-radius: 3px 3px 3px 3px;
+	background-image: -moz-linear-gradient(top, #73aad7, #1f76bf);
+	background-image: -ms-linear-gradient(top, #73aad7, #1f76bf);
+	background-image: -webkit-linear-gradient(top, #73aad7, #1f76bf);
+	background-image: linear-gradient(top, #73aad7, #1f76bf);
+	border: 1px solid #1C72A7;
+	box-shadow: 0 3px 3px #B9B9B9;
+	height: 40px;
+	box-shadow: 0 0px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 #292929;
+}
+*/
+
+#tabbedNavEnhanced div.tabSelected div.tabText a {
+	font-weight: normal;
+}
+
+#tabbedNavEnhanced div.tab {
+	background: #1F76BF !important;
+	border-color: #F5F5F5;
+	border-style: none;
+	border-width: 0 1px 0 0;
+	display: table;
+	float: left;
+	height: 42px;
+	min-width: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+#tabbedNavEnhanced div.tabSelected div.tabText a,#tabbedNavEnhanced div.tab div.tabText a
+	{ /*
+		background-image: -moz-linear-gradient(center top , #73AAD7, #1F76BF);
+		border-left: 1px solid rgba(255, 255, 255, 0.2);
+		border-right: 1px solid #045290;*/
+	box-shadow: 0 0 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 #292929;
+	color: #FFFFFF;
+	display: block;
+	height: 50px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000000;
+}
+/*sub menu css*/
+.horzNavButtonBarPadding {
+    background: none repeat scroll 0 0 #E5E8E8 !important;
+}
+
+#horzNavButtonBar {
+    background: none repeat scroll 0 0 #282828;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: auto !important;
+}
+
+#horzNavButtonBar td {
+    padding: 0;
+    vertical-align: top;
+}
+.horzNavButton {
+    background: none repeat scroll 0 0 #E5E8E8 !important;
+    font-size: 12px;
+    height: 36px;
+    text-align: left;
+    text-decoration: none;
+}
+.horzNavButton a.topMenuItem.noFlyout {
+    color: black !important;
+}
+.horzNavButton a.topMenuItem.noFlyout {
+    color: #848484;
+}
+
+.horzNavButton a.topMenuItem.noFlyout.active:hover {
+    background: none repeat scroll 0 0 #D6D5D5 !important;
+    color: green !important;
+}
+.horzNavButton a.topMenuItem.noFlyout.active {
+    background: none repeat scroll 0 0 #D6D5D5;
+    color: #0096D6 !important;
+}
+.horzNavButton a.topMenuItem {
+    color: #F2F2F2;
+    display: block;
+    padding: 11px 10px;
+    text-decoration: none;
+}
+
+.horzNavButton a.topMenuItem.noFlyout:hover {
+    background-color: #E5E8E8 !important;
+    color: green !important;
+}
+.horzNavButton a.topMenuItem.noFlyout:hover {
+    background-color: #636363;
+    color: #F2F2F2;
+}
+
+/* portlet content css*/
+/*.portletWindow {
+    margin-left: 12px;
+}*/
+
+/*footer separate area css*/
+.seperateDiv{
+    background-color: #E7E7E7;
+    height: 12px;
+    margin-left: 0px!important;
+    margin-top: 60px;
+    width: 100%;
+}
+span.screenReading {
+	display: none;
+}
+
+#tabbedNavEnhanced div.tab div.tabText {
+    color: #848484;
+    display: table-cell;
+    font-family: Arial;
+    font-size: 15px;
+    padding-left: 22px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+#tabbedNavEnhanced div.tabSelected {
+	background: none repeat scroll 0 0 #005CA6;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+    display: table;
+    float: left;
+    height: 42px;
+    overflow: hidden;
+    padding-left: 25px;
+    padding-right: 22px;
+}
+
+#tabbedNavEnhanced div.tabSelected div.tabText {
+	font-size: 15px;
+}
+
+#tabbedNavEnhanced div.tabSelected div.tabText a, #tabbedNavEnhanced div.tab div.tabText a {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 #292929;
+    color: #FFFFFF;
+    display: block;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000000;
+}
+
+a, object, embed {
+    outline: 0 none;
+}
+
+#tabbedNavEnhanced div.emptyTab {
+    background: none repeat scroll 0 0 #1F76BF !important;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 #292929;
+    filter: none;
+}
+#tabbedNavEnhanced div.emptyTab {
+    background: -moz-linear-gradient(center top , #181818, #111111) repeat scroll 0 0 transparent;
+    height: 42px;
+    padding-left: 25px;
+    padding-right: 22px;
+}
+
+#tabbedNavEnhanced div.tabSelected div.tabText a {
+    font-weight: normal;
+}
+
+#tabbedNavEnhanced div.tabSelected div.tabText a:hover,#tabbedNavEnhanced div.tab div.tabText a:hover
+	{
+	color: #FFFFFF;
+	text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+	-webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px
+		#292929;
+	-moz-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px
+		#292929;
+	box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
+}
+
+.TableBackground td { /*float: left;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;*/
+	word-break: break-all;
+}
+
+/*
+	style for datatable
+*/
+
+
+.searchPanel {
+	margin: 8px 20px 5px;
+}
+
+.searchSelection {
+	font-size: 11px;
+	border: 1px solid #8C8C8C;
+	height: 25px;
+	width: 148px;
+	overflow-x: hidden;
+	background-color: white;
+	border-radius: 2px 2px 2px 2px;
+	color: #1E1E1E;
+	padding: 2px 2px 1px;
+}
+
+.searchSelection option {
+	color: #4B4A4A;
+	padding: 4px 4px 0;
+	border: medium none;
+}
+
+.searchSelection option:hover {
+	color: red;
+}
+
+.searchCriteria input[type="text"],textarea,select {
+	background-color: #FFFFFF;
+    border: 1px solid #8C8C8C;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 2px 2px 5px #E2E2E2, 2px 2px 5px #CACBCC inset;
+    color: #4D4D4D;
+/*    margin: 3px 12px;
+    padding: 1px 12px;
+    width: 123px;*/
+}
+
+#form {
+    margin-left: 0px !important;
+}
+
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year
+	{
+	padding: 0;
+	width: 49%;
+}
+
+/*
+		style for qtca
+	*/
+.searchCriteria { /*float:left;*/
+	
+}
+
+.searchButton,.resetFilters,.downloadCsv {
+	float: left;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	border-radius: 3px 3px 3px 3px;
+	border: 1px;
+	margin: 0 5px;
+	box-shadow: none;
+}
+
+
+.menuTools_buttons {
+	height: 30px;
+	margin: 10px 1px 0 10px;
+	padding: 8px 11px;
+}
+
+.image {
+	height: 16px;
+	width: 16px;
+	padding-right: 2px;
+	padding-top: 1px;
+}
+
+.customerFilter,.showOrHide {
+	float: right;
+	margin: 7px 0 8px 8px;
+}
+
+.customerFilter {
+	font-weight: bold;
+	width: 20%;
+}
+
+.displayMessage {
+	float: left;
+	text-align: right;
+}
+
+.dataTables_filter {
+	text-align: left;
+	float: none;
+}
+
+.showOrHide {
+	width: 12%;
+}
+
+.flushBatchInvoice,.cancelBatchInvoice {
+	display: none;
+}
+
+.filterIcon { /*
+		float:right;
+		margin: 8px 0 8px 8px;
+		background-image:url("../images/filter.png");
+		height: 24px;
+		width: 24px;*/
+	
+}
+
+.filterInput {
+	float: right;
+}
+
+/*
+		datatable css
+	*/
+.search_result {
+	margin-bottom: 20px;
+	width: 100% !important;
+}
+
+#action {
+	min-width: 100px;
+}
+
+
+
+.dataTables_paginate {
+	float: left;
+	text-align: right;
+}
+
+
+
+div.ColVis_collection button.ColVis_Button {
+	background-color: white;
+	float: none;
+	height: auto;
+	width: 100%;
+}
+
+#search_result_filter input[type="text"] {
+	background: url(../images/search-dark.png) no-repeat 10px 6px #fcfcfc;
+	color: #222222;
+	border: 0 none;
+	font: 12px Arial, Helvetica, Sans-serif;
+	width: 100px;
+	padding: 6px 15px 6px 35px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0
+		rgba(0, 0, 0, 0.9) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0
+		rgba(0, 0, 0, 0.9) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9)
+		inset;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+
+#search_result_filter input[type="text"]:focus {
+	background: url(../images/search-dark.png) no-repeat 10px 6px #fcfcfc;
+	color: #222222;
+	width: 150px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0
+		rgba(0, 0, 0, 0.9) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0
+		rgba(0, 0, 0, 0.9) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9)
+		inset;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#historyNiceViewTable .dataTables_info {
+	
+}
+
+#historyNiceViewTable .dataTables_paginate {
+	float: right;
+	text-align: center;
+}
+
+.dataTables_length select[name="search_result_length"] {
+	background-color: #FFFFFF;
+	border: 1px solid #8C8C8C;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 2px 2px 5px #E2E2E2, 2px 2px 5px #CACBCC inset;
+	color: #4D4D4D;
+	margin: 3px;
+	padding: 0;
+	width: 50px;
+}
+
+#search_result_length select[name="search_result_length"] {
+	background-color: #FFFFFF;
+	border: 1px solid #8C8C8C;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 2px 2px 5px #E2E2E2, 2px 2px 5px #CACBCC inset;
+	color: #4D4D4D;
+	margin: 3px;
+	padding: 0;
+	width: 50px;
+}
+
+.everything .siteTitle span.siteTitleText {
+    color: black;
+}
+.everything .siteTitle span.siteTitleText {
+    position: static !important;
+}
+.everything .siteTitle span.siteTitleText {
+    font-size: 20pt;
+    left: 30px;
+    position: relative;
+    top: 8px;
+}
+.siteTitle table .titleTd span {
+    left: 0 !important;
+}
+.siteTitle table .logoutTd span {
+    font-size: 14px !important;
+}
+
+/*
+		history filter
+	*/
+button.ui-multiselect {
+	width: 24px !important;
+}
+
+div.ui-multiselect-menu {
+	width: 220px !important;
+}
+
+#localeSelect {
+	background-color: white;
+    border-radius: 2px 2px 2px 2px;
+    color: #1E1E1E;
+    font-size: 11px;
+    height: 25px;
+    overflow-x: hidden;
+    padding: 2px 2px 1px;
+    width: 148px;
+	box-shadow: 2px 2px 5px #E2E2E2, 2px 2px 5px #CACBCC inset;
+}
+
+.selectFilterType .ui-multiselect {
+	background: url("../images/filter.png") no-repeat scroll 0 0 #FCFCFC;
+	border: 1px none #D3D3D3;
+	height: 33px;
+	margin-bottom: 2px;
+}
+
+div#language_locale {
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+.TableBackground {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+}
+
+div.dataTables_wrapper table {
+    font-size: 12px !important;
+    width: 100% !important;
+	letter-spacing: 0;
+}
+
+.even {
+    background-color: #E7E7E7;
+}
+
+.odd {
+    background-color: #BDBDBD;
+}
+
+.ui-button {
+    display: inline-block;
+    overflow: visible;
+    text-decoration: none !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #D3D3D3;
+    color: #555555;
+    font-weight: normal;
+}
+
+.TableHeaderRow th {
+    color: #111111;
+    font-size: inherit;
+    font-weight: bold;
+    text-align: left;
+}
+
+ul {
+	padding: 0;
+}
+
+.everything .siteTitle span.siteTitleText a {
+    color: black;
+}
+
+#defaultContainer {
+    background-color: #E7E7E7;
+    height: 12px;
+/*    margin-left: 12px;
+    width: 99%;*/
+}
